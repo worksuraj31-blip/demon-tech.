@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demon Tech - Future of Technology</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 1.6em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .post {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .post:hover {
+      transform: translateY(-5px);
+    }
+
+    .post img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .post h2 {
+      margin: 15px;
+      font-size: 1.25em;
+      color: #111;
+    }
+
+    .post p {
+      margin: 0 15px 10px;
+      color: #444;
+    }
+
+    .post a {
+      display: inline-block;
+      margin: 10px 15px 15px;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .post a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 30px 20px;
+      background: #fff;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    footer {
+      text-align: center;
+      background: #111;
+      color: white;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    .dark {
+      background-color: #111;
+      color: #ddd;
+    }
+
+    .dark header {
+      background-color: #222;
+    }
+
+    .dark footer {
+      background-color: #222;
+    }
+
+    .dark .post {
+      background-color: #1c1c1c;
+      color: #ddd;
+    }
+
+    .toggle-btn {
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 15px;
+      cursor: pointer;
+      font-size: 0.9em;
+      margin-left: 10px;
+    }
+
+    .toggle-btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Demon Tech</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#privacy">Privacy</a>
+      <button class="toggle-btn" onclick="toggleMode()">🌙 Dark</button>
+    </nav>
+  </header>
+
+  <!-- HOME / POSTS -->
+  <main id="home" class="posts">
+    <!-- Future Smartphone -->
+    <article class="post">
+      <img src="https://in.pinterest.com/pin/2814818512287891/" alt="Future Smartphone">
+      <h2>The Mirror Smartphone: A Glimpse into 2030</h2>
+      <p>Imagine a phone that’s pure glass — fully transparent, AI-integrated, and functions like a mirror when locked. This is the future of mobile design.</p>
+      <a href="#">Read more</a>
+    </article>
+
+    <!-- Foldable Device -->
+    <article class="post">
+      <img src="https://source.unsplash.com/800x600/?foldable,phone,technology" alt="Foldable Device">
+      <h2>Foldable Tech: The Comeback of Innovation</h2>
+      <p>Foldable phones are no longer prototypes — they’re the future. Let’s explore how flexible screens are changing device ergonomics forever.</p>
+      <a href="#">Read more</a>
+    </article>
+
+    <!-- AI -->
+    <article class="post">
+      <img src="https://source.unsplash.com/800x600/?artificialintelligence,robot,technology" alt="AI Revolution">
+      <h2>AI Revolution: Smart Machines, Smarter World</h2>
+      <p>Artificial Intelligence isn’t coming — it’s here. Discover how AI is redefining every aspect of human life and productivity.</p>
+      <a href="#">Read more</a>
+    </article>
+
+    <!-- Cybersecurity -->
+    <article class="post">
+      <img src="https://source.unsplash.com/800x600/?cybersecurity,hacker,data" alt="Cybersecurity">
+      <h2>Cybersecurity 2025: Your Digital Shield</h2>
+      <p>From deepfakes to data leaks — the threats are real. Learn how modern cybersecurity is evolving to keep us safe in a connected world.</p>
+      <a href="#">Read more</a>
+    </article>
+
+    <!-- Gadgets -->
+    <article class="post">
+      <img src="https://source.unsplash.com/800x600/?gadgets,technology,devices" alt="Tech Gadgets">
+      <h2>Top 5 Futuristic Gadgets You Must See</h2>
+      <p>From holographic smartwatches to levitating speakers — here are the top upcoming gadgets that feel like they’re from another dimension.</p>
+      <a href="#">Read more</a>
+    </article>
+
+    <!-- Quantum Computing -->
+    <article class="post">
+      <img src="https://source.unsplash.com/800x600/?quantum,computer,technology" alt="Quantum Computing">
+      <h2>Quantum Computing: Beyond the Binary</h2>
+      <p>Quantum computers are about to make traditional processors look ancient. Explore how qubits and entanglement will change the digital game.</p>
+      <a href="#">Read more</a>
+    </article>
+  </main>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Demon Tech</h2>
+    <p>Demon Tech brings you the latest insights from the world of futuristic technology — from AI to quantum computing. Our goal is to simplify tech for everyone who’s curious about what’s next.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📧 Email: contact@demontech.com</p>
+    <p>🌐 Follow us on social media for daily updates and insights.</p>
+  </section>
+
+  <!-- PRIVACY -->
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>Your privacy matters to us. We may use cookies to personalize content and ads. We never collect or share personal data without consent.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Demon Tech | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+
+</body>
+</html>
